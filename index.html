@@ -2,12 +2,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pixel Art</title>
     <link rel="stylesheet" href="styless.css">
 </head>
 <body>
-    
-    
+     <h1>Pixel Art Creator</h1>
+
+<p class="info">
+    Šipkami doleva a doprava vyber barvu, Enter ji potvrď. Kliknutím kreslíš, dvojklikem mažeš.
+  </p>
+
+  <div class="palette-wrapper">
+    <h2>Paleta barev</h2>
+    <div class="palette-grid" id="paletteGrid">
+      <div class="color-box selected" data-color="#ff0000" style="background-color: #ff0000;"></div>
+      <div class="color-box" data-color="#00ff00" style="background-color: #00ff00;"></div>
+      <div class="color-box" data-color="#0000ff" style="background-color: #0000ff;"></div>
+      <div class="color-box" data-color="#ffff00" style="background-color: #ffff00;"></div>
+      <div class="color-box" data-color="#ff00ff" style="background-color: #ff00ff;"></div>
+      <div class="color-box" data-color="#00ffff" style="background-color: #00ffff;"></div>
+      <div class="color-box" data-color="#ffa500" style="background-color: #ffa500;"></div>
+      <div class="color-box" data-color="#000000" style="background-color: #000000;"></div>
+      <div class="color-box" data-color="#ffffff" style="background-color: #ffffff;"></div>
+    </div>
+  </div>
+
+  <p id="selectedColorText">Aktivní barva: #ff0000</p>
+
+  <button id="resetBtn">Resetovat vše</button>
+
+  <div id="grid"></div>
+
     <script src="script.js"></script>
 </body>
 </html>
